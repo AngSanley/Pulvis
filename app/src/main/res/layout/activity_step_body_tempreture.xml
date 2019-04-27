@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:animateLayoutChanges="true"
+    tools:context=".StepBodyTempretureActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarParentTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:gravity="bottom"
+                android:text="@string/body_temperature"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnConTempr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:text="@string/connect"
+                android:visibility="gone" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnNextStepTempr"
+        android:layout_below="@id/appbarParentTop"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvResultTempr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:gravity="center"
+            android:text="@string/result"
+            android:textSize="25sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvSatuanTempr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/sf_pro_text_light"
+            android:gravity="center"
+            android:text="@string/satuan"
+            android:textSize="25sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/btnStartTempr"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:text="@string/start"
+                android:textAllCaps="false"
+                android:textSize="25sp" />
+
+            <io.netopen.hotbitmapgg.library.view.RingProgressBar
+                android:id="@+id/progress_bar_tempr"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:max="100"
+                app:ringColor="@android:color/darker_gray"
+                app:ringProgressColor="@color/colorPrimary"
+                app:ringWidth="20dp"
+                app:style="STROKE"
+                app:textColor="@color/colorPrimary"
+                app:textIsShow="true"
+                app:textSize="35sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNextStepTempr"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/sf_pro_text_bold"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/colorGrey1"
+        android:textSize="20sp" />
+
+</RelativeLayout>

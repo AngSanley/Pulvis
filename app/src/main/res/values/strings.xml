@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Pulvis</string>
+    <string name="greetings_morning">Good morning</string>
+    <string name="greetings_afternoon">Good Afternoon</string>
+    <string name="greetings_evening">Good evening</string>
+    <string name="greetings_night">Good night</string>
+    <string name="history">History</string>
+    <string name="profile_patient">Profile Patient</string>
+    <string name="check_now">Check now</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pairing_request">PAIRING requested\n-> Perform pairing steps. Connect again</string>
+
+    <string name="celcius">\u2103</string>
+    <string name="fahrenheit">\u2109</string>
+    <string name="degre">\u00B0</string>
+    <string name="respiration_rate">Respiration Rate</string>
+    <string name="hearth_rate">Heart Rate</string>
+    <string name="body_temperature">Body Temperature</string>
+    <string name="per_min">per min</string>
+    <string name="bpm">bpm</string>
+    <string name="normal">Normal</string>
+    <string name="blood_presure">Blood pressure</string>
+    <string name="blood_presure_dan_heart_beat">Blood pressure &amp; Heart Rate</string>
+    <string name="mmhg">mmHg</string>
+    <string name="next">Next</string>
+    <string name="retry">Retry</string>
+    <string name="start">Start</string>
+    <string name="result">Result</string>
+    <string name="satuan">satuan</string>
+    <string name="back">Back</string>
+    <string name="device_name_format">Device: %s</string>
+    <string name="ok">Ok</string>
+    <string name="connect">Connect</string>
+
+</resources>
